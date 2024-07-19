@@ -8,8 +8,6 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
-        - npm install @Former Member-cloud-sdk/http-client
-        - npm update --package-lock-only
         - npm clean-install --production
         - npx -p @Former Member/cds-dk cds build --production
 modules:
