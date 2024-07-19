@@ -8,7 +8,7 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
-        - npm clean-install --production
+        - npm install --production
         - npx -p @Former Member/cds-dk cds build --production
 modules:
   - name: risk-management-srv
